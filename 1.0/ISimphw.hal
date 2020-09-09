@@ -1,0 +1,11 @@
+package android.hardware.simple@1.0;
+
+import android.hidl.memory.block@1.0::MemoryBlock;
+
+interface ISimphw {
+    simpfn(int32_t valueIn) generates (int32_t valueRet);
+    getSome() generates(MemoryBlock block);
+    giveBack(MemoryBlock block);
+};
+
+
